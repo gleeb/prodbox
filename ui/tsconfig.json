@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "outDir": ".",
+    "target": "ES5",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "noLib": false
+  },
+  "filesGlob": [
+    "./src/app/**/*.ts",
+    "./src/app/services/**/*.ts",
+    "./src/app/formcomponents/**/*.ts",
+    "!node_modules/**/*.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "files": [
+    "./src/app/app.component.ts",
+    "./src/app/boot.ts",
+    "./src/app/components/formcomponents/input.component.ts",
+    "./src/app/components/formcomponents/jsoneditor.component.ts",
+    "./src/app/components/header.component.ts",
+    "./src/app/components/mainmenu.component.ts",
+    "./src/app/components/subcomponent.component.ts",
+    "./src/app/components/testcase.form.component.ts",
+    "./src/app/components/testcase.form.step.component.ts",
+    "./src/app/model/input.form.model.ts",
+    "./src/app/model/testcase.form.model.ts",
+    "./src/app/model/testcase.step.model.ts",
+    "./src/app/services/sampleService.ts"
+  ]
+}

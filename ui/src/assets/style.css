@@ -1,0 +1,12 @@
+.strikethrough{
+    text-decoration: line-through;
+    color: slategray;
+}
+
+#content{
+    min-height:100%;
+}
+
+.form-group-text-area {
+    width: 100%;
+}
