@@ -11,8 +11,8 @@ export class MyService {
   }
 
   public getMessage() {
-    this.http.get("api/")
-        .map(res => res.text())
+    this.http.get("api/health")
+        .map(res =>{res.text()} )
         .subscribe(
           data => console.log(data),
           err => console.log(err),
