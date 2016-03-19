@@ -6,11 +6,12 @@ lazy val buildNumber = sys.props.getOrElse("BUILD_NUMBER", default = "0-SNAPSHOT
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala, JavaServerAppPackaging , DockerPlugin, UniversalPlugin)
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.7"
 
 resolvers += "Scalaz Bintray Repo" at "https://dl.bintray.com/scalaz/releases"
 resolvers += "sonatype snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 resolvers += "RoundEights" at "http://maven.spikemark.net/roundeights"
+resolvers += "Typesafe repository" at "https://dl.bintray.com/typesafe/maven-releases/"
 
 libraryDependencies ++= Seq(
   "org.json4s" %% "json4s-native" % "3.3.0",
