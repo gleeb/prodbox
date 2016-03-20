@@ -13,7 +13,6 @@
     The logger name is typically the Java/Scala package name.
     This configures the log level to log at for a package and its children packages.
   -->
-  <logger name="com.vatbox.imaginary" level="warn" />
 
   <root level="INFO">
     <appender-ref ref="STDOUT" />
