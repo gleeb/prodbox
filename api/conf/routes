@@ -2,4 +2,4 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET    /api/health          com.fourstars.prodbox.controllers.SampleController.index
+GET    /api/track          com.fourstars.prodbox.controllers.TrackingControllerImpl.trackNewUrl

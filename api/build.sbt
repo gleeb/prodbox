@@ -14,11 +14,8 @@ resolvers += "RoundEights" at "http://maven.spikemark.net/roundeights"
 resolvers += "Typesafe repository" at "https://dl.bintray.com/typesafe/maven-releases/"
 
 libraryDependencies ++= Seq(
-  "org.json4s" %% "json4s-native" % "3.3.0",
-  "org.json4s" %% "json4s-mongo" % "3.3.0",
-  "org.mongodb" %% "casbah" % "3.0.0",
-  "com.github.tototoshi" %% "play-json4s-jackson" % "0.4.2",
   "com.typesafe.scala-logging" %% "scala-logging" % "3.1.0",
+  "org.reactivemongo" %% "play2-reactivemongo" % "0.11.10",
   ws,
   /** Test dependencies */
   "org.scalactic" %% "scalactic" % "2.2.6" % "test" withSources(),
@@ -27,9 +24,7 @@ libraryDependencies ++= Seq(
   "org.scalacheck" %% "scalacheck"  % "1.12.2" % "test" withSources(),
   "org.mockito" % "mockito-all" % "1.10.19" % "test" withSources(),
   "junit" % "junit" % "4.12" % "test" withSources(),
-  "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % "1.50.0" % "test",
-  "com.github.tototoshi" %% "play-json4s-test-native" % "0.4.2" % "test",
-  "com.github.tototoshi" %% "play-json4s-test-jackson" % "0.4.2" % "test"
+  "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % "1.50.0" % "test"
 )
 
 // Play provides two styles of routers, one expects its actions to be injected, the
