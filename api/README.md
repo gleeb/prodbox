@@ -1,1 +1,4 @@
-MFS
+dev env:
+``` 
+docker-compose up 
+``` 

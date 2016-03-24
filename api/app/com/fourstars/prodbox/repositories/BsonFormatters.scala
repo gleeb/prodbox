@@ -1,4 +1,4 @@
-package com.fourstars.prodbox.repositories.mongodb
+package com.fourstars.prodbox.repositories
 
 import com.fourstars.prodbox.model.TrackingItem
 

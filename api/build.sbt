@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   ws,
   /** Test dependencies */
   "org.scalactic" %% "scalactic" % "2.2.6" % "test" withSources(),
-  "org.scalatest" %% "scalatest" % "2.2.6" % "test" withSources(),
+  "org.scalatest" %% "scalatest" % "2.2.6",
   "org.scalatestplus" %% "play" % "1.4.0-M3" % "test" withSources(),
   "org.scalacheck" %% "scalacheck"  % "1.12.2" % "test" withSources(),
   "org.mockito" % "mockito-all" % "1.10.19" % "test" withSources(),
