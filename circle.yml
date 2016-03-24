@@ -7,7 +7,10 @@ dependencies:
     - "~/.sbt"
 machine:
   services: 
-     - docker 	
+     - docker
+     - mongodb
+  java: 
+    version: oraclejdk8 	
   environment:
     SBT_VERSION: 0.13.7
     SBT_OPTS: "-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled
@@ -23,3 +26,4 @@ dependencies:
     - chmod u+x $HOME/bin/sbt
     - which sbt
     - sbt sbt-version
+
