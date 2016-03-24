@@ -27,3 +27,10 @@ dependencies:
     - which sbt
     - sbt sbt-version
 
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: prodbox
+
