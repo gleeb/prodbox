@@ -1,4 +1,8 @@
 dependencies:
+   pre:
+    - wget -q https://dl.bintray.com/sbt/debian/sbt-0.13.11.deb
+    - sudo dpkg -i sbt-0.13.11.deb
+
   cache_directories:
     - "~/.ivy2"
     - "~/.sbt"
@@ -22,10 +26,6 @@ dependencies:
     - echo "java $SBT_OPTS -jar \`dirname \$0\`/sbt-launch.jar \"\$@\""
       > $HOME/bin/sbt
     - chmod u+x $HOME/bin/sbt
-    - echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
-    - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
-    - sudo apt-get update
-    - sudo apt-get install sbt
     - which sbt
     
 
