@@ -29,7 +29,7 @@ dependencies:
     - sbt sbt-version
 test:
   override:
-    - sbt test
+    - sbt test  -Dsbt.parser.simple=true
 
 deployment:
   staging:
