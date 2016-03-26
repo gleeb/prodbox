@@ -36,7 +36,7 @@ dockerBaseImage := "netflixoss/java:8"
 dockerEntrypoint := Seq("bin/%s" format executableScriptName.value, "-J-Xms1024M", "-J-Xmx2048m", "-J-server")
 dockerExposedPorts := Seq(9000)
 
-javaOptions in Test += "-DMONGO_URI=mongodb://localhost:27018/"
+javaOptions in Test += "-DMONGO_URI=mongodb://localhost:27018/prodbox"
 
 fork in run := false
 fork in test := false

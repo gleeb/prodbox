@@ -8,7 +8,6 @@ dependencies:
 machine:
   services: 
      - docker
-     - mongodb
   java: 
     version: oraclejdk8 	
   environment:
