@@ -1,7 +1,7 @@
 dependencies:
   pre:
-    - wget -q https://dl.bintray.com/sbt/debian/sbt-0.13.7.deb
-    - sudo dpkg -i sbt-0.13.7.deb
+    - wget -q https://dl.bintray.com/sbt/debian/sbt-0.13.9.deb
+    - sudo dpkg -i sbt-0.13.9.deb
   cache_directories:
     - "~/.ivy2"
     - "~/.sbt"
@@ -26,19 +26,10 @@ dependencies:
       > $HOME/bin/sbt
     - chmod u+x $HOME/bin/sbt
     - which sbt
-    - echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
-    - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
-    - sudo apt-get update
-    - sudo apt-get install sbt
-    - which sbt
     - sbt sbt-version
     
 test:
   override:
-    - echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
-    - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
-    - sudo apt-get update
-    - sudo apt-get install sbt
     - sbt test  -Dsbt.parser.simple=true
 
 deployment:
