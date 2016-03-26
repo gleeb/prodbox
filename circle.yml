@@ -5,6 +5,8 @@ dependencies:
   cache_directories:
     - "~/.ivy2"
     - "~/.sbt"
+    - "~/.m2"
+    - "~/docker"
 machine:
   services: 
      - docker
@@ -24,9 +26,10 @@ dependencies:
       > $HOME/bin/sbt
     - chmod u+x $HOME/bin/sbt
     - which sbt
-    - sbt sbt-version test
-
-
+    - sbt sbt-version
+test:
+  override:
+    - sbt test
 
 deployment:
   staging:
